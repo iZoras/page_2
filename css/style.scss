@@ -1,0 +1,23 @@
+@use 'style_modules/header';
+@use 'style_modules/base';
+@use 'style_modules/hero';
+@use 'style_modules/section-1';
+@use 'style_modules/section-2';
+@use 'style_modules/section-3';
+@use 'style_modules/footer';
+
+* {
+  font-family: base.$roboto-font;
+  font-style: normal;
+  font-size: 16px;
+}
+
+
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+

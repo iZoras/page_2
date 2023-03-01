@@ -1,0 +1,90 @@
+@use 'base';
+
+.hero{
+  background-color: #FDFDFB;
+  height: 768px;
+  }
+
+.hero_wrapper{
+  width: 90%;
+  margin:-50px auto 0 auto;
+
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.hero_info{
+  color: #1B1A17;
+
+  .headline{
+    font-family: base.$playfair-font;
+    position: relative;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .headline-next {
+    font-family: base.$playfair-font;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+
+    position: relative;
+    margin-left: 40px;
+  }
+  p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(27, 26, 23, 0.82);
+
+    margin-left: 40px;
+  }
+  .hero_button{
+    background-color: #444240;
+    margin-left: 40px;
+    padding: 1.5rem 2.5rem;
+    border: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+
+    color: white;
+
+  }
+}
+
+.hero_watchInfo{
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+
+  background: linear-gradient(to left, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%);
+  padding: 50px;
+  width: 800px;
+  height:800px;
+  border-radius: 800px;
+  mix-blend-mode: normal;
+  z-index: 1;
+  img{
+    width: 70%;
+  }
+}
+
+.headline-wideLine{
+  @include base.default-text;
+  line-height: 16px;
+}
+
+@media screen and (max-width:1100px){
+  .hero_wrapper{
+    flex-direction: column;
+  }
+
+}

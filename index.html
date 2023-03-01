@@ -18,24 +18,203 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!-- Add your site or application content here -->
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<header class="header">
+  <div class="header_container container">
+    <div class="logo">
+
+      <img src="img/logo_2.svg" alt="logo">
+      <a href="index.html">
+        <span class="logo-text">conquest</span>
+      </a>
+    </div>
+    <nav class="navigation">
+      <div class="nav_anchor"><a href="">Каталог</a></div>
+      <div class="nav_anchor"><a href="" class="nav_anchor">Акции</a></div>
+      <div class="nav_anchor"><a href="" class="nav_anchor">Доставка</a></div>
+      <div class="nav_anchor"><a href="" class="nav_anchor">Контакты</a></div>
+    </nav>
+    <div class="adds_container"> <!--adds as in additional-->
+      <ul class="adds_buttons">
+        <li><img src="./img/search.svg" alt=""></li>
+        <li><img src="./img/likes.svg" alt=""></li>
+        <li><img src="./img/shopping-cart.svg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero_wrapper container">
+    <div class="hero_info">
+      <div style="display: flex; align-items: center">
+        <span class=headline-wideLine>
+          &mdash;&mdash;&mdash;
+        </span>
+        <h1 class="headline"> Весна/Лето 2019</h1></div>
+      <span class="headline-next">Коллекция</span>
+      <p>Швейцарские часы в наличии в Москве<br>
+        и с доставкой по всему миру</p>
+      <button class="hero_button">Смотреть каталог</button>
+    </div>
+    <div class="hero_watchInfo ">
+      <span class="price">22 000 ₽ &mdash;&mdash;</span>
+      <img src="img/watch_main.svg" alt="" class="watch-img">
+      <span class="price">&mdash;&mdash; 28 мм диаметр</span>
+    </div>
+  </div>
+</section>
+
+<section class="section_1">
+  <div class="popular-wrapper  container">
+    <div class="popular-header headline">
+      <h1>Популярные модели</h1>
+      <a href=""><span class="see-all">Смотреть все</span></a>
+    </div>
+    <div class="popular-list-container">
+      <ul class="popular-list">
+        <li>
+          <div class="list_content">
+            <span class="model-name">RADO</span>
+            <span class="model-price">62 300 ₽</span>
+            <div class="watch-outer">
+              <div class="watch-inner">
+                <img src="img/watch_1.svg" alt="">
+              </div>
+            </div>
+            <a href="">&mdash;&mdash; Подробнее</a>
+          </div>
+        </li>
+        <li>
+          <div class="list_content">
+            <span class="model-name">BVLGARI</span>
+            <span class="model-price">81 700 ₽</span>
+            <div class="watch-outer">
+              <div class="watch-inner">
+                <img src="img/watch_3.svg" alt="">
+              </div>
+            </div>
+            <a href="">&mdash;&mdash; Подробнее</a>
+          </div>
+        </li>
+        <li>
+          <div class="list_content">
+            <span class="model-name">BVLGARI</span>
+            <span class="model-price">72 700 ₽</span>
+            <div class="watch-outer">
+              <div class="watch-inner">
+                <img src="img/watch_4.svg" alt="">
+              </div>
+            </div>
+            <a href="">&mdash;&mdash; Подробнее</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section_2">
+  <div class="info-gallery-container">
+    <div class="gallery-content-container">
+      <div class="gallery-img-container"><img src="img/photo_banner.svg" alt=""></div>
+      <div class="gallery-content">
+        <h1>Подлинное качество</h1>
+        <p>Все часы производятся в Швейцарии и имеют<br> сертификаты качества.
+          Настоящие швейцарские<br> часы — это предмет гордости и престижа.</p>
+        <button class="gallery-btn">СМОТРЕТЬ КАТАЛОГ</button>
+      </div>
+    </div>
+    <div class="gallery-controls">
+      <span><   01   ></span>
+    </div>
+  </div>
+</section>
+
+<section class="contact-us">
+  <div class="contact-us-wrapper container">
+    <div class="contact-us-content">
+      <h1>Следите за нашими новостями</h1>
+      <p>Подписывайтесь на <b>@conquest_watch</b> в соцсетях<br> и узнавайте о новинках и акциях первыми.</p>
+      <div class="contact-us-socials">
+        <img src="img/instagram_icon.svg" alt="">
+        <img src="img/facebook_icon.svg" alt="">
+        <img src="img/twitter_icon.svg" alt="">
+      </div>
+    </div>
+    <div class="contact-us-images">
+      <div class="contact-us-left-images">
+        <img id="ester" src="img/photo_1.jpg" alt="">
+        <img src="img/photo_2.jpg" alt="">
+      </div>
+      <div class="right_images">
+        <img src="img/photo_3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-info">
+      <div class="footer-logo">
+        <img src="img/footer-logo.svg" alt="logo">
+        <span class="big-text-logo">CONQUEST</span>
+      </div>
+      <span class="small-text">8 (499) 450-47-97</span>
+      <span class="small-text">info@conquest.watch.ru</span>
+
+    </div>
+    <div class="footer-info">
+      <span class="big-text">о компании</span>
+      <span class="small-text">Наши магазины</span>
+      <span class="small-text">Вакансии</span>
+      <span class="small-text">Сертификаты</span>
+      <span class="small-text">Отзывы</span>
+    </div>
+    <div class="footer-info">
+      <span class="big-text">покупателям</span>
+      <span class="small-text">Каталог товаров</span>
+      <span class="small-text">Как заказать?</span>
+      <span class="small-text">FAQ</span>
+      <span class="small-text">Корпоративным клиентам</span>
+    </div>
+    <div class="footer-info">
+      <span class="big-text">оплата и доставка</span>
+      <span class="small-text">Способы оплаты</span>
+      <span class="small-text">Время доставки</span>
+      <span class="small-text">Гарантии и ремонт</span>
+      <span class="small-text">Возврат и компенсация</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
